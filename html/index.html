@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../CSS/style.css"> -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container border shadow-lg">
+        <h2 style="background-color: rgb(185 212 255);" class="text-uppercase text-center">danh sách lương nhân viên</h2>
+        <div class="row header">
+            <img src="../IMAGE/banner3.png" alt="">
+        </div>
+        <div class="row menu">
+            <div class="col-12">
+                <nav class="navbar navbar-expand">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Thông tin</a></li>
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <button type="button" class="btn nav-link" data-bs-toggle="modal" data-bs-target="#modalID">
+                                Cập nhật lương
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            
+            <table class="table table-bordered">
+                <tr class="fw-bolder">
+                    <td>STT</td>
+                    <td>Mã nhân viên</td>
+                    <td>Họ tên</td>
+                    <td>Ngày hợp đồng</td>
+                    <td>Chức vụ</td>
+                    <td>Bậc lương</td> 
+                </tr>
+                <tr class="fw-bolder">
+                    <td>1</td>
+                    <td>912345678</td>
+                    <td>Hoàng Minh Vương</td>
+                    <td>12/5/2000</td>
+                    <td>Nhân viên</td>
+                    <td>1.86</td>
+            </table>
+        </div>
+        
+        <!-- modal fade -->
+        <div class="modal fade" id="modalID">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="text-uppercase">thông tin nhân viên</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row form-group mb-4">
+                            <div class="col-12">
+                                <label for="">Mã Nhân Viên</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" id="manhanvien" class="form-control" placeholder="Mã nhân sự">
+                                <span id="errmanhanvien" class="text-danger">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-12">
+                                <label for="">Tên Nhân Viên</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" id="hoten" class="form-control" placeholder="Họ tên">
+                                <span id="errhoten" class="text-danger">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-12">
+                                <label for="">Ngày vào công ty</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="date" id="ngayvaolam" class="form-control" placeholder="Họ tên">
+                                <span id="errngayvaolam" class="text-danger">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-12">
+                                <label for="">Chức vụ</label>
+                            </div>
+                            <div class="d-flex gap-1">
+                                <div class="d-flex">
+                                    <input type="radio" name="chucvu" value="Cán bộ quản lý" id="canbo" class="form-check">
+                                    <label for="canbo">Cán bộ quản lý</label>
+                                </div>
+                                &nbsp;
+                                <div class="d-flex">
+                                    <input type="radio" name="chucvu" value="Nhân viên" id="nhanvien" class="form-check">
+                                    <label for="nhanvien">Nhân viên</label>
+                                </div>
+                            </div>
+                            <span id="errlucchon" class="text-danger">(*)</span>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-12">
+                                <label for="">Bậc lương</label>
+                            </div>
+                            <div class="col-12">
+                                <select name="" id="luachon" class="form-select">
+                                    <option value="2">Bậc 1</option>
+                                    <option value="1.86">Bậc 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-12">
+                                <label for="">Hệ số</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" id="heso" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="text-end d-flex">
+                                <button type="button" id="btnDangKy" class="btn text-white" style="background-color: #25a3bd;">Thêm</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="cancel" class="btn text-white" style="background-color: #25a3bd;">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex footer justify-content-center text-center pb-5" style="background-color: rgb(185 212 255);">
+            <div style="color: #297a7a;" class="">Mã sinh viên: 22671581</div>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <div style="color: #297a7a;" class="">Họ tên sinh viên: Nguyễn Thị Diệu Hòa</div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/script.js"></script>
+
+</html>
