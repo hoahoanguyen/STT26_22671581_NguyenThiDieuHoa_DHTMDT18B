@@ -1,0 +1,42 @@
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table th, .product-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.sub-title {
+    color: #007BFF;
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+.product-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.product-details p {
+    margin: 10px 0;
+}

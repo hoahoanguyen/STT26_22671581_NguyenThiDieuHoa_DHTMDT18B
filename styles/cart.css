@@ -1,0 +1,126 @@
+.cart-header > div:nth-child(1) {
+    width: 200px;
+}
+.cart-header > div:nth-child(2) {
+    width: 350px;
+    text-align: center;
+}
+.cart-header > div:nth-child(3) {
+    width: 140px;
+    text-align: center;
+}
+.cart-header > div:nth-child(4) {
+    flex: 1 -10.5%;
+    text-align: center;
+
+}
+.cart-header > div:nth-child(5) {
+    flex: 1 12.5%;
+    text-align: right;
+
+}
+/* cart */
+.cart-lines .cart-box > div:nth-child(1) {
+    width: 200px;
+
+}
+.cart-lines .cart-box > div:nth-child(2) {
+    width: 350px;
+}
+.cart-lines .cart-box > div:nth-child(3) {
+    width: 63px;
+}
+
+.cart-lines .cart-box > div:nth-child(4) {
+    text-align: center;
+
+}
+.cart-lines .cart-box > div:nth-child(5) {
+    text-align: center;
+    width: 124px;
+
+}
+
+.cart-lines .cart-box > div:nth-child(6) {
+    text-align: right;
+    width: 114px;
+
+}
+ 
+.cart-lines .box-product img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-box .box-quantity .sub {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    background: #F5F6F9;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cart-box .box-quantity .number {
+    border: 1px solid #EDEDED;
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+    margin: 0 4px;
+    
+}
+
+.cart-box .box-quantity .number input {
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    text-align: center;
+    pointer-events: none;
+    
+}
+
+.cart-box .box-quantity .add {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    background: #F5F6F9;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.totalcartprice {
+    border-top: 1px solid #b8b6b6;
+    padding: 15px 0;
+}
+
+.order-box-cart {
+    background-color: #e5e8f3;
+    padding: 20px;
+}
+
+.cart-lines{
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
+
+.flexrowcart > div:nth-child(1) {
+    color: #820813 !important;
+    font-size: 14px;
+}
+
+.flexrowcart > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 48px;
+    background: #820813;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff !important;
+}

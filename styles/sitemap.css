@@ -1,0 +1,49 @@
+.sitemap-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sitemap-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sitemap-list li {
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.1em;
+}
+
+.sitemap-list li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ff6600;
+    border-radius: 50%;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #0073e6;
+    transition: color 0.3s;
+}
+
+.sitemap-list a:hover {
+    color: #005bb5;
+}
