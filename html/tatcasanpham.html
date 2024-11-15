@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-4.0.2-dist/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="header-top bg-dark">
+                <div class="container d-flex justify-content-between align-items-center bg-dark py-2">
+                    <div class="header__top-left d-flex align-items-center gap-1">
+                        <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                        <p class="m-0">Hotline: <a href="#phone" class="text-decoration-none">0868.123.123</a></p>
+                    </div>
+                    <div class="header__top-right d-flex gap-3">
+                        <a href="./cachchonsanpham.html" class="d-block text-decoration-none">Cách chọn sản phẩm</a>
+                        <a href="#" class="d-block text-decoration-none">Chính sách khách vip</a>
+                        <a href="./introduce.html" class="d-block text-decoration-none">Giới thiệu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle-sub bg-white">
+                <div class="container d-flex justify-content-between">
+                    <div class="header-sub__left d-flex justify-content-between align-items-center">
+                        <a href="./home.html">
+                            <img class="logo" src="../images/logo.png" alt="">
+                        </a>
+                        <div class="search-box ms-5 d-flex justify-content-center align-items-center">
+                            <input type="text" name="search-input" class="search-input me-1" placeholder="Tìm kiếm..." id="">
+                            <span class="search-box__btn rounded-3">
+                                <svg class="search-icon rounded" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="header-sub__right d-flex justify-content-center align-items-center">
+                        <div class="info-header d-flex justify-content-center align-items-center gap-2">
+                            <div class="action-account me-4  text-center">
+                                <a href="./login.html" class="account-link text-center d-block">
+                                   <span class="w-25 text-center">Login</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg> 
+                                </a>
+                            </div>
+                            <div class="action-cart">
+                                <a href="./cart.html" class="cart-link d-block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                    </svg>
+                                </a>
+                                <div class="cart-info">
+                                    <small>
+                                        Có
+                                        <em class="highlight">
+                                            <span class="cartTopRightQuantity">1</span>
+                                            Sản phẩm
+                                        </em>
+                                        trong giỏ hàng
+                                    </small>
+                                    <div class="cartTopRightContent">
+                                        <div class="ct-right-item d-flex align-items-center gap-3">
+                                            <div class="item-img">
+                                                <img class="w-100 h-100" src="../images/product-img/categories/slide-1-trang-chu-slide-1.jpg" alt="">
+                                            </div>
+                                            <div class="ctr-item-info">
+                                                <span class="ctr-product-name">Ví da nhựa D304</span>
+                                                <p>1 x 379.000</p>
+                                                <div class="ctr-edit">
+                                                    <a href="" class="ctr-edit-remove">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ctr-total">Tổng: <span class="ctr-total-vnd">379.000đ</span></div>
+                                    <div class="ctr-pay mt-3">
+                                        <a href="" class="ctr-btn-pay text-decoration-none">Gửi đơn hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="header-category bg-dange d-flex justify-content-start align-items-center">
+                <nav class="container">
+                    <ul class="list-unstyled d-flex justify-content-start align-items-center m-0">
+                        <li class="list-menu-item me-5 text-center position-relative">
+                            <a href="./dungcubongban.html" class="text-uppercase text-dark py-2 fw-bold text-decoration-none">dụng cụ bóng bàn</a>
+                            <ul class="p-3 list-submenu list-unstyled position-absolute" style="width: 250%;">
+                                <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Bàn Bóng Bàn</a></li>
+                                <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Lưới Bóng Bàn</a></li>
+                                <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Quả Bóng Bàn</a></li>
+                                <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Vợt Bóng Bàn</a></li>
+                                <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Cốt Vợt Bóng Bàn</a></li>
+                                <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Mặt Vợt Bóng Bàn</a></li>
+                                <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy Bắn Bóng Bàn</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-menu-item me-5 text-center position-relative">
+                            <a href="./maychaybo.html" class="text-uppercase text-dark py-2 fw-bold text-decoration-none">máy chạy bộ</a>
+                            
+                        </li> 
+                        <li class="list-menu-item me-5 text-center position-relative">
+                            <a href="./maytaptheduc.html" class="text-uppercase text-dark py-2 fw-bold text-decoration-none">máy tập thể dục</a>
+                            <ul class="p-3 list-submenu list-unstyled position-absolute d-flex justify-content-around" style="width: 270%;">
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <h6 class="fw-bold text-uppercase" style="color: cornflowerblue;">Quy trình tập</h6>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Xe Đạp Tập Thể dục</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy Tập Cơ Bụng</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Xe Đạp Phục Hồi Chức Năng</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy Tập Chân</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>  
+                        <li class="list-menu-item me-5 text-center position-relative">
+                            <a href="./dungcutapgym.html" class="text-uppercase text-dark py-2 fw-bold text-decoration-none">dụng cụ tập gym</a>
+                            <ul class=" p-3 list-submenu list-unstyled position-absolute d-flex justify-content-around" style="width: 350%;">
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <h6 class="fw-bold text-uppercase d-flex" style="color: cornflowerblue;">Nâng cao sức khỏe & cơ</h6>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Giàn Tạ Đa Năng</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Ghế Tập Tạ</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled mt-3">
+                                        <h6 class="fw-bold text-uppercase d-flex" style="color: cornflowerblue;">Tập tay</h6>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Xà Đơn - Xà Kép</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Tạ Tay - Tạ Đơn</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <h6 class="fw-bold text-uppercase d-flex" style="color: cornflowerblue;">Ghế & phụ kiện</h6>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Ghế Tập Bụng</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Phụ Kiện Tập Gym</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>   
+                        <li class="list-menu-item me-5 text-center position-relative">
+                            <a href="./dungcuvothuat.html" class="text-uppercase text-dark py-2 fw-bold text-decoration-none">dụng cụ võ thuật</a>
+                            <ul class=" p-3 list-submenu list-unstyled position-absolute d-flex justify-content-around" style="width: 450%;">
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Trụ & Bao Cát Đấm Bốc</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled mt-3">
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Găng Tay Boxing</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Đích Đá - Đích Đấm Boxing</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Thiết Bị Bảo Hộ Võ Thuật</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Dụng Cụ Tập Thể Lực</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Côn Nhị Khúc</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>    
+                        <li class="list-menu-item me-5 text-center position-relative">
+                            <a href="./thethaongoaitroi.html" class="text-uppercase text-dark py-2 fw-bold text-decoration-none">thể thao ngoài trời</a>
+                            <ul class=" p-3 list-submenu list-unstyled position-absolute d-flex justify-content-around" style="width: 250%;">
+                                <li>
+                                    <ul class="list-unstyled">
+                                        <h6 class="fw-bold text-uppercase d-flex" style="color: cornflowerblue;">Tập theo nhu cầu</h6>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy Tập Công Viên HQ</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Dụng cụ thể thao ngoài trời Vifa</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy tập công viên Vifa trụ đôi</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy tập công viên Vifa trụ đơn D140</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy tập chung cư - sân vườn Vifa</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy tập công viên Vifa trụ đơn D114</a></li>
+                                        <li class="sub-item"><a href="" class="text-capitalize text-decoration-none text-dark">- Máy Tập Công Viên Sodex Sport</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </li>     
+                        <li class="me-5 text-center">
+                            <a href="./tatcasanpham.html" class="text-uppercase text-dark py-2 fw-bold text-decoration-none" style="color: red !important;">all</a> 
+                        </li>
+                        <li class="me-5 text-center">
+                            <a href="./sitemap.html" class="text-uppercase text-dark py-2 fw-bold text-decoration-none" style="color: red !important;">sitemap</a> 
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+        <main>
+            <section class="breadcrumb-shop py-2 container-fluid ">
+                <div class="container">
+                    <ol class="list-unstyled d-flex m-0">
+                        <li><a href="" class="text-decoration-none text-dark">Trang chủ</a></li>
+                        <li><a href="" class="text-decoration-none text-dark">Danh mục</a></li>
+                        <li><a href="" class="text-decoration-none text-dark">Tất cả sản phẩm</a></li>
+                    </ol>
+                </div>
+            </section>
+            <section class="container-fluid" style="border-bottom: 1px solid black;">
+                <div class="container">
+                    <div class="category-product row">
+                        <div class="col-6 text-start">
+                            <h2 class="category-name-title">Tất cả sản phẩm</h2>
+                        </div>
+                        <div class="col-6 text-end">
+                            <select name="" id="">
+                                <option value="sapxepgiatangdan">Giá: tăng dần</option>
+                                <option value="sapxepgiagiamdan">Giá: giảm dần</option>
+                                <option value="sapxepaz">Tên: A-Z</option>
+                                <option value="sapxepza">Tên: Z-A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-wrapper row all-product">
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maychaybo/sp11.jpg" alt="">
+                                <img src="../images/product-img/all-product/maychaybo/sp1.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy chạy bộ điện HQ V7 PLUS
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">178,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maychaybo/sp2.jpg" alt="">
+                                <img src="../images/product-img/all-product/maychaybo/sp22.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy chạy bộ điện đa năng HQ-V1C
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">169,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maychaybo/sp33.jpg" alt="">
+                                <img src="../images/product-img/all-product/maychaybo/sp3.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy chạy bộ điện Sakura S33
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">209,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maychaybo/sp44.jpg" alt="">
+                                <img src="../images/product-img/all-product/maychaybo/sp4.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy chạy bộ điện Sakura HQ-V3C
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">241,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maychaybo/sp55.jpg" alt="">
+                                <img src="../images/product-img/all-product/maychaybo/sp5.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy chạy bộ điện đa năng Oreni RE-3
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">175,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maychaybo/sp66.jpg" alt="">
+                                <img src="../images/product-img/all-product/maychaybo/sp6.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy chạy bộ điện HQ 555
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">310,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maychaybo/sp77.jpg" alt="">
+                                <img src="../images/product-img/all-product/maychaybo/sp7.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy chạy bộ điện đa năng HQ-V2C
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">219,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maychaybo/sp88.jpg" alt="">
+                                <img src="../images/product-img/all-product/maychaybo/sp8.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy chạy bộ điện Sakura HQ-666
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">79,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+
+                        <!-- máy tập td -->
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp1.jpg" alt="">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp1.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Xe đạp tập thể dục Dual Bike
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">178,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp2.jpg" alt="">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp2.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Xe đạp tập thể dục X-Bike X100MP
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">169,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp3.jpg" alt="">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp3.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy tập phục hồi chức năng Mini Bike
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">209,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp4.jpg" alt="">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp4.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Xe đạp tập liên hoàn Life Span
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">241,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp5.jpg" alt="">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp5.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Xe đạp tập thể dục Tokado TK-1000
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">175,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp6.jpg" alt="">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp6.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Xe đạp tập thể dục Tokado TK900
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">310,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp7.jpg" alt="">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp7.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Xe đạp tập thể dục Sovnia L-003
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">219,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp8.jpg" alt="">
+                                <img src="../images/product-img/all-product/maytaptheduc/sp8.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Xe đạp thể dục Tokado TK800
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">79,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <!-- dung cu bong ban -->
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcubongban/sp11.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcubongban/sp1.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bàn bóng bàn mini cho trẻ em
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">178,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcubongban/sp2.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcubongban/sp22.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bàn bóng bàn Thiên Trường PT-02
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">169,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcubongban/sp33.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcubongban/sp3.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bàn bóng bàn Thiên Trường PT-05
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">209,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcubongban/sp44.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcubongban/sp4.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bàn bóng bàn VinaSport MDF 18mm
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">241,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcubongban/sp55.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcubongban/sp5.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bàn bóng bàn Thiên Trường Sport MDF 18 ly 2022
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">175,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcubongban/sp66.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcubongban/sp6.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bàn bóng bàn Thiên Trường Sport MDF 25 ly 2022 
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">310,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcubongban/sp77.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcubongban/sp7.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bàn bóng bàn VinaSport MDF 25mm
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">219,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcubongban/sp88.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcubongban/sp8.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bàn bóng bàn Thiên Trường TT New 2025
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">79,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <!-- dung cu tap gym -->
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp1.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp1.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Giàn tạ đa năng XK 2022
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">178,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp2.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp2.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Giàn tập tạ đa năng 2016
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">169,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp3.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp3.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Ghế tập tạ đa năng Xuki 2023
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">209,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp4.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp4.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Ghế tập tạ đa năng Thanh Xuân
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">241,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp5.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp5.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Ghế tập tạ Multy Ben 601521
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">175,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp6.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp6.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Ghế tập tạ Ben 601502
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">310,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp7.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp7.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Ghế tập tạ Power Rack FX32
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">219,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp8.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcutapgym/sp8.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Giàn tạ đa năng HQ-600S
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">79,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <!-- dung cu vo thuat-->
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp1.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp1.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Trụ hơi đấm bốc tự cân bằng 
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">178,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp2.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp2.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Vỏ bao cát đấm bốc
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">169,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp3.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp3.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bóng tập phản xạ Kangrui KB424
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">209,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp4.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp4.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bộ bóng tập phản xạ cho trẻ em
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">241,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp5.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp5.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bóng tập phản xạ 2 đầu Kangrui KB426
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">175,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp6.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp6.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bao đấm tập luyện
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">310,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp7.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp7.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Giá treo bao cát gắn tường
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">219,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp8.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcuvothuat/sp8.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bóng tập đấm lắc lư phản xạ
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">79,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+
+                        <!-- the thao ngoai troi -->
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp1.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp1.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy tập đẩy tay HQ-631
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">178,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp2.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp2.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Ghế tập lưng bụng đôi HQ-619
+
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">169,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp3.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp3.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Xà thang HQ-629
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">209,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp4.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp4.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Bập bênh ngoài trời HQ-628
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">241,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp5.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp5.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Thang vận động ngoài trời HQ-627
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">175,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp10.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp10.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy tập xoay eo 3 người HQ-626
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">310,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp7.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp7.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy tập tay ép ngực đôi HQ-625
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">219,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+                        <div class="product-item col-md-3 mb-3 d-grid border">
+                            <a href="" class="product-hover">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp8.jpg" alt="">
+                                <img src="../images/product-img/all-product/dungcungoaitroi/sp8.jpg" class="img-front" alt="">
+                            </a> 
+                            <div class="box-pro-hot-detail text-center px-2">
+                                <a href="" class="product-name text-decoration-none fs-6 fw-lighter">Máy đi bộ trên không đôi HQ-624
+                                </a>
+                                <div class="box-price">
+                                    <p class="fw-bold fs-6">79,000đ</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg> 
+                            </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-gallery py-2 mt-2">
+                <div class="container">
+                    <h2 class="text-uppercase text-black mb-4">đề xuất cho bạn</h2>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../images/product-img/dungcungoaitroi/Ghe-tap-lung-bung-don-HQ-620.jpg" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="../images/product-img/dungcutapgym/Ghe-tap-ta-Power-Rack-FX32.jpg" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="../images/product-img/dungcuvothuat/hinh-anh-gia-treo-bao-cat-gan-tuong.jpg" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="../images/product-img/dungcungoaitroi/may-tap-day-tay-hq-631.jpg" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="../images/product-img/dungcutapgym/hinh-anh-gian-ta-da-nang-XK-2022-1.jpg" class="w-100 h-100" alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="../images/product-img/dungcungoaitroi/May-tap-tay-ep-nguc-doi-HQ-625.jpg" class="w-100 h-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-policy container-fluid">
+                <div class="container">
+                 <div class="row">
+                     <div class="col-3 policy-item">
+                         <div class="row">
+                             <div class="col-2 p-0 text-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                                 </svg> 
+                             </div>
+                             <div class="col-10 p-0 d-flex align-items-center">
+                                 <h4 class="m-0 text-uppercase fs-6 fw-bold">thanh toán & giao hàng</h4>
+                             </div>
+                         </div>
+                         <div class="row">
+                             <p>
+                                 Miễn phí vận chuyển cho đơn hàng trên 399.000 VNĐ <br>
+                                     - Giao hàng và thu tiền tận nơi <br>
+                                     - Chuyển khoản và giao hàng <br>
+                                     - Mua hàng tại shop <br>
+                             </p>
+                         </div>
+                     </div>
+                     <div class="col-3 policy-item">
+                         <div class="row">
+                             <div class="col-2 p-0 text-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                                 </svg> 
+                             </div>
+                             <div class="col-10 p-0 d-flex align-items-center">
+                                 <h4 class="m-0 text-uppercase fs-6 fw-bold">thẻ thành viên</h4>
+                             </div>
+                         </div>
+                         <div class="row">
+                             <p>
+                                 Chế độ ưu đãi thành viên VIP: <br>
+                                     - 5% cho thành viên Bạc <br>
+                                     - 10% cho thành viên Vàng <br>
+                                     - 15% cho thành viên Kim cương <br>
+                             </p>
+                         </div>
+                     </div>
+                     <div class="col-3 policy-item">
+                         <div class="row">
+                             <div class="col-2 p-0 text-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                 </svg>
+                             </div>
+                             <div class="col-10 p-0 d-flex align-items-center">
+                                 <h4 class="m-0 text-uppercase fs-6 fw-bold">giờ mở cửa</h4>
+                             </div>
+                         </div>
+                         <div class="row">
+                             <p>
+                                 <strong>8:30 đến 22:00</strong> <br>
+                                     - Tất cả các ngày trong tuần <br>
+                                     - Áp dụng cho tất cả các chi nhánh hệ thống cửa hàng DIEUHOA-SPORT <br> 
+                             </p>
+                         </div>
+                     </div>
+                     <div class="col-3 policy-item">
+                         <div class="row">
+                             <div class="col-2 p-0 text-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                                 </svg>
+                             </div>
+                             <div class="col-10 p-0 d-flex align-items-center">
+                                 <h4 class="m-0 text-uppercase fs-6 fw-bold">hỗ trợ 24/7</h4>
+                             </div>
+                         </div>
+                         <div class="row">
+                             <p>
+                                 Gọi ngay cho chúng tôi khi bạn có thắc mắc <br>
+                                     - 0868.444.644 <br> 
+                             </p>
+                         </div>
+                     </div>
+                     
+                 </div>
+                </div>
+             </section>
+         </main>
+ 
+         <footer class="footer">
+             <div class="container-fluid">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-3 py-3">
+                             <h4 class="text-uppercase">DIEUHOA-SPORT vn</h4>
+                             <ul class="list-unstyled">
+                                 <li><a href="" class="text-decoration-none">- Giới thiệu</a></li>
+                                 <li><a href="" class="text-decoration-none">- Kiểm tra đơn hàng</a></li>
+                                 <li><a href="" class="text-decoration-none">- Cách chọn sản phẩm</a></li>
+                                 <li><a href="" class="text-decoration-none">- Thông tin liên hệ</a></li>
+                                 <li><a href="" class="text-decoration-none">- Câu hỏi thường gặp</a></li>
+                                 <li><a href="" class="text-decoration-none">- Hướng dẫn bảo quản</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-3 py-3">
+                             <h4 class="text-uppercase">chính sách</h4>
+                             <ul class="list-unstyled">
+                                 <li><a href="" class="text-decoration-none">- Hướng dẫn mua hàng</a></li>
+                                 <li><a href="" class="text-decoration-none">- Khách hàng thân thiết</a></li>
+                                 <li><a href="" class="text-decoration-none">- Chính sách đổi hàng</a></li>
+                                 <li><a href="" class="text-decoration-none">- Chính sách bảo mật</a></li>
+                                 <li><a href="" class="text-decoration-none">- Đối tác sản xuất</a></li>
+                                 <li><a href="" class="text-decoration-none">- Bán hàng liên kết (Affiliate)</a></li>
+                             </ul>
+                         </div>
+                         <div class="col-3 py-3">
+                             <h4 class="text-uppercase">KẾT NỐI VỚI DIEUHOA-SPORT</h4>
+                             <div class="wrapper-contect">
+                                 <div class="footer-socials">
+                                     <div class="row mb-3">
+                                         <div class="col-2">
+                                             <a href="">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
+                                             </a>
+                                         </div>
+                                         <div class="col-2">
+                                             <a href="">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path></svg>
+                                             </a>
+                                         </div>
+                                         <div class="col-2">
+                                             <a href="">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
+                                             </a>
+                                         </div>
+                                         <div class="col-2">
+                                             <a href="">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path></svg>
+                                             </a>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <img src="../images/logo-bct_5a0bbf4fb2d34c3e88c04df41ad38dc9.png" alt="">
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-3 py-3">
+                             <h4 class="text-uppercase">THÔNG TIN CỬA HÀNG</h4>
+                             <div class="address list-unstyled">
+                                 <div class="address-item">
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                     </svg>
+                                     20 Cửu Long, P15, Q.10, HCM
+                                 </div>
+                                 <div class="address-item">
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                     </svg>
+                                     168 Nguyễn Trọng Tuyển, P8, Phú Nhuận
+                                 </div>
+                                 <div class="address-item">
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                     </svg> 
+                                     Hotline: (123) 456-7890
+                                 </div>
+                                 <div class="address-item">
+                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                     </svg> 
+                                     Mail: dieuhoa@gmail.com
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="container-fluid copy-right-wrapper">
+                 <div class="container">
+                     <div class="row text-center">
+                         <p class="copy-right text-center m-0 py-3">Copyright © 2024 DIEUHOASPORT.VN.</p>
+                     </div>
+                 </div>
+             </div>
+         </footer>
+    </div>
+    <script src="../javascript/productjs.js"></script>
+    <script src="../javascript/productDetail.js"></script>
+</body>
+</html>
